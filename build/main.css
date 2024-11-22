@@ -49,6 +49,10 @@
     background-color: #fff;
     border-radius: 7px;
   }
+  .menu_content.open {
+    display: block;
+  }
+  
 @media (min-width: 1024px){
     .menu-content {
         clip-path: inset(0 0 0 0) !important;

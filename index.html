@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-[#e87500] w-full lg:h-[93px]">
+    <header class="bg-[#e87500] w-full lg:h-[93px] sticky top-0 z-40">
       <div class="grid grid-cols-12 relative">
         <a
           href="./index.html"
@@ -33,7 +33,7 @@
           <img
             src="./assets/image/logo.png"
             alt="logo_mci"
-            class="col-span-2" 
+            class="col-span-2"
           />
         </a>
         <button
@@ -46,23 +46,19 @@
         >
           <ul class="flex flex-col lg:flex-row lg:items-center lg:text-white">
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent lg:hover:opacity-70"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent text-xs lg:text-base"
             >
-              <p class="text-xs lg:text-base">
-                Khóa học <i class="ri-arrow-down-s-fill"></i>
-              </p>
+              <span class="lg:hover:opacity-70 font-semibold"
+                >KHÓA HỌC <i class="ri-arrow-down-s-fill"></i
+              ></span>
 
               <ul
-                class="menu_content hidden absolute top-full left-0 bg-white lg:bg-prm_color shadow-lg w-[200px]"
+                class="menu_content hidden absolute z-50 top-full bg-white left-0 lg:text-black shadow-lg w-[200px]"
               >
-                <li
-                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
-                >
+                <li class="lg:hover:bg-[#eeeeee] p-2 flex items-center">
                   <a href="#!" class="text-sm">Phân tích dữ liệu</a>
                 </li>
-                <li
-                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
-                  >
+                <li class="hover:bg-[#f5f5f5] lg:hover:bg-[#eeeeee] p-2">
                   <a href="#!" class="text-sm">Kĩ sư dữ liệu</a>
                 </li>
                 <li
@@ -78,30 +74,30 @@
               </ul>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent text-xs lg:text-base"
             >
-              <p class="text-xs lg:text-base">
-                Lịch đào tạo <i class="ri-arrow-down-s-fill"></i>
-              </p>
+              <span class="lg:hover:opacity-70 font-semibold"
+                >LỊCH ĐÀO TẠO <i class="ri-arrow-down-s-fill"></i
+              ></span>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent text-xs lg:text-base"
             >
-              <p class="text-xs lg:text-base">
-                Doanh nghiệp <i class="ri-arrow-down-s-fill"></i>
-              </p>
+              <span class="lg:hover:opacity-70 font-semibold"
+                >DOANH NGHIỆP <i class="ri-arrow-down-s-fill"></i
+              ></span>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent text-xs lg:text-base"
             >
-              <a href="#!" class="text-xs lg:text-base">Blog</a>
+              <span class="lg:hover:opacity-70 font-semibold">BLOG</span>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent text-xs lg:text-base"
             >
-              <p class="text-xs lg:text-base">
-                Về chúng tôi <i class="ri-arrow-down-s-fill"></i>
-              </p>
+              <span class="lg:hover:opacity-70 font-semibold"
+                >VỀ CHÚNG TÔI<i class="ri-arrow-down-s-fill"></i
+              ></span>
             </li>
           </ul>
         </div>
@@ -124,6 +120,7 @@
       </div>
     </header>
 
+    <!-- Banner -->
     <section>
       <img
         src="./assets/image/banner_mobile.png"
@@ -135,6 +132,7 @@
       />
     </section>
 
+    <!-- Sự kiện và các bài viết -->
     <section class="mt-10 lg:grid lg:grid-cols-3 lg:max-w-[1500px] mx-auto">
       <div class="lg:col-start-2 col-span-2">
         <div class="px-5 relative">
@@ -370,6 +368,7 @@
       </div>
     </section>
 
+    <!-- =============== Thư viện ảnh ================== -->
     <section class="mt-8 px-3 max-w-[1400px] xl:mx-auto xl:mt-12">
       <div class="flex flex-col items-center justify-center">
         <h2 class="text-prm_color font-bold text-2xl lg:text-3xl xl:text-4xl">
@@ -398,6 +397,7 @@
       </div>
     </section>
 
+    <!-- ================= Chương trình đào tạo =========================== -->
     <section class="mt-8 mb-10 px-3 max-w-[1400px] xl:mx-auto xl:mt-11">
       <div class="flex flex-col items-center justify-center mb-3">
         <h2 class="text-prm_color font-bold text-2xl lg:text-3xl xl:text-4xl">
@@ -501,7 +501,7 @@
             chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
           </p>
           <a
-            href="#!"
+            href="./detail.html"
             class="text-prm_color inline-block w-full text-right text-xs md:text-base"
             >Xem thêm</a
           >
@@ -646,13 +646,25 @@
   ></script>
 
   <script>
+    const menuToggle = document.querySelector(".menu_content");
+    const menuContent = document.querySelector(".menu-content");
     document.querySelector(".open_menu").addEventListener("click", function () {
-      const menuContent = document.querySelector(".menu-content");
       menuContent.classList.toggle("show");
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      menuContent.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menuToggle.classList.toggle("open");
+      });
+    });
+    document.addEventListener("click", () => {
+      menuToggle.classList.remove("open");
+    });
+
     $(document).ready(function () {
       function initSlick() {
-        if ($(window).width() <= 996) {
+        if ($(window).width() <= 1024) {
           if (!$(".article-list").hasClass("slick-initialized")) {
             $(".article-list").slick({
               slidesToShow: 1,
