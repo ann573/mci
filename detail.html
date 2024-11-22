@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build/detail.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <title>Detail</title>
+  </head>
+  <body>
+    <header class="bg-[#e87500] w-full lg:h-[93px]">
+      <div class="grid grid-cols-12 relative">
+        <a
+          href="./index.html"
+          class="col-span-2 lg:col-span-1 flex justify-center"
+        >
+          <img
+            src="./assets/image/logo.png"
+            alt="logo_mci"
+            class="col-span-2" 
+          />
+        </a>
+        <button
+          class="open_menu text-white col-span-8 text-left pl-2 lg:hidden"
+        >
+          <i class="ri-menu-line text-xl sm:text-3xl"></i>
+        </button>
+        <div
+          class="menu-content absolute z-40 top-full bg-[#ece8e8] w-full shadow-md lg:shadow-none lg:bg-transparent lg:static lg:col-span-9 lg:flex"
+        >
+          <ul class="flex flex-col lg:flex-row lg:items-center lg:text-white">
+            <li
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent lg:hover:opacity-70"
+            >
+              <p class="text-xs lg:text-base">
+                Khóa học <i class="ri-arrow-down-s-fill"></i>
+              </p>
+
+              <ul
+                class="menu_content hidden absolute top-full left-0 bg-white lg:bg-prm_color shadow-lg w-[200px]"
+              >
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Phân tích dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Kĩ sư dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Khoa học dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Lập trình ứng dụng</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+            >
+              <p class="text-xs lg:text-base">
+                Lịch đào tạo <i class="ri-arrow-down-s-fill"></i>
+              </p>
+            </li>
+            <li
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+            >
+              <p class="text-xs lg:text-base">
+                Doanh nghiệp <i class="ri-arrow-down-s-fill"></i>
+              </p>
+            </li>
+            <li
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+            >
+              <a href="#!" class="text-xs lg:text-base">Blog</a>
+            </li>
+            <li
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
+            >
+              <p class="text-xs lg:text-base">
+                Về chúng tôi <i class="ri-arrow-down-s-fill"></i>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <i class="ri-search-line text-[#bdbdba] sm:text-2xl"></i>
+        </div>
+
+        <div class="flex items-center justify-center w-full lg:hidden">
+          <i class="ri-login-box-line text-white sm:text-2xl"></i>
+        </div>
+
+        <div class="hidden lg:flex lg:items-center">
+          <button
+            class="bg-white h-1/3 text-prm_color text-sm rounded-md px-2 py-1"
+          >
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex flex-col items-center py-5">
+      <div class="px-5 relative w-1/2">
+        <input
+          type="text"
+          placeholder="Tìm kiếm bài viết"
+          class="w-full border border-[#818181] rounded-[21.5px] placeholder:italic placeholder:text-sm pl-10 lg:py-2"
+        />
+        <i class="ri-search-line text-[#818080] absolute left-9 lg:top-2"></i>
+      </div>
+
+      <ul class="flex gap-5 lg:gap-5 w-full my-5 px-3 justify-center">
+        <li
+          class="text-prm_color leading-3 text-[12px] md:text-base lg:text-2xl lg:leading-none font-bold text-center"
+        >
+          Chia sẻ <br />
+          kinh nghiệm
+        </li>
+        <li
+          class="text-prm_color relative leading-3 text-[12px] md:text-base lg:text-2xl lg:leading-none font-bold text-center before:content-[''] before:border before:border-[#7E7E7E] before:absolute before:-left-2 before:h-1/2 lg:before:h-full before:top-1/4 lg:before:top-0 after:content-[''] after:border after:border-[#7E7E7E] after:absolute after:-right-2 after:h-1/2 lg:after:h-full after:top-1/4 lg:after:top-0"
+        >
+          Kiến thức <br />
+          chuyên môn
+        </li>
+        <li
+          class="text-prm_color leading-3 text-[12px] md:text-base lg:text-2xl lg:leading-none font-bold text-center"
+        >
+          MCI <br />
+          Careers
+        </li>
+        <li
+          class="text-prm_color relative leading-3 text-[12px] md:text-base lg:text-2xl lg:leading-none font-bold text-center before:content-[''] before:border before:border-[#7E7E7E] before:absolute before:-left-2 before:h-1/2 lg:before:h-full before:top-1/4 lg:before:top-0 after:content-[''] after:border after:border-[#7E7E7E] after:absolute after:-right-2 after:h-1/2 lg:after:h-full after:top-1/4 lg:after:top-0"
+        >
+          Kinh nghiệm <br />
+          thực chiến
+        </li>
+        <li
+          class="text-prm_color leading-3 text-[12px] md:text-base lg:text-2xl lg:leading-none font-bold text-center"
+        >
+          Lich <br />
+          khai giảng
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-[#F0F0F0] mb-5">
+      <div
+        class="hidden lg:block text-prm_color max-w-[1400px] mx-auto font-bold py-4"
+      >
+        <a href="./index.html">Trang chủ</a>
+        <i class="ri-arrow-right-s-line"></i>
+        <a href="#!">Blog</a>
+        <i class="ri-arrow-right-s-line"></i>
+        <a href="#!">Chia sẻ kinh nghiệm</a>
+        <i class="ri-arrow-right-s-line"></i>
+        <a href="#!"
+          >Bạn Nguyễn Quang Hưng - Học Data là 1 quá trình và mình đã vượt qua
+          nó như nào</a
+        >
+      </div>
+    </section>
+
+    <div class="px-5 lg:hidden">
+      <img src="./assets/image/banner_detail.png" alt="banner" />
+    </div>
+
+    <section
+      class="lg:max-w-[1300px] lg:mx-auto lg:pl-1 lg:grid lg:grid-cols-3 gap-10"
+    >
+      <div class="lg:col-span-2 px-5 lg:px-0">
+        <h1 class="text-xl text-prm_color font-bold lg:text-5xl">
+          Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó
+          như nào
+        </h1>
+        <div class="c_underline hidden lg:block"></div>
+        <p class="mb-5">
+          Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú
+          vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+          đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin
+          trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí
+          để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+        </p>
+
+        <div class="bg-[#F5F5F5] p-3 lg:rounded-xl">
+          <h3 class="text-xl text-prm_color font-bold mb-3">
+            <i class="ri-menu-line"></i>
+            Nội dung bài viết
+          </h3>
+          <ol class="ml-1 lg:ml-3">
+            <li class="mb-3">1. Nội dung bài viết</li>
+            <li class="mb-3">2. Nội dung bài viết</li>
+            <li class="mb-3">3. Nội dung bài viết</li>
+            <li class="mb-3">4. Nội dung bài viết</li>
+          </ol>
+        </div>
+
+        <p class="my-3">
+          Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú
+          vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+          đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin
+          trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí
+          để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+        </p>
+
+        <p class="mb-3">
+          Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú
+          vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+          đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin
+          trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí
+          để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+        </p>
+
+        <img
+          src="./assets/image/banner_detail.png"
+          class="w-full hidden lg:block"
+        />
+
+        <p class="mt-7 mb-3 hidden lg:block">
+          Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú
+          vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+          đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin
+          trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí
+          để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự
+          tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về
+          những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký
+          nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các
+          trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+          vào ngành công nghệ thông tin như mong muốn mà chỉ...
+        </p>
+
+        <p class="mb-10 hidden lg:block">
+          Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú
+          vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+          đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin
+          trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí
+          để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+        </p>
+
+        <section class="bg-[#F0F0F0] pt-5 pb-10 px-5">
+          <div class="flex flex-col items-center">
+            <h2
+              class="text-prm_color font-bold text-2xl lg:text-3xl xl:text-4xl"
+            >
+              Các bài đăng liên quan
+            </h2>
+            <div class="c_underline"></div>
+          </div>
+          <div class="article-list px-10 lg:px-5">
+            <div class="">
+              <div>
+                <img
+                  src="./assets/image/gray_news.png"
+                  class="w-full object-obtain"
+                  alt="news"
+                />
+              </div>
+              <div>
+                <h3
+                  class="text-prm_color font-bold text-xl my-2 lg:text-md lg:my-3"
+                >
+                  Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã
+                  vượt qua nó như nào
+                </h3>
+                <p class="text-justify text-lg lg:text-base">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...
+                </p>
+                <a
+                  href="#!"
+                  class="text-prm_color italic text-sm text-right inline-block w-full mt-3 lg:mb-4"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <img
+                  src="./assets/image/gray_news.png"
+                  class="w-full object-obtain"
+                  alt="news"
+                />
+              </div>
+              <div>
+                <h3
+                  class="text-prm_color font-bold text-xl my-2 lg:text-md lg:my-3"
+                >
+                  Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã
+                  vượt qua nó như nào
+                </h3>
+                <p class="text-justify text-lg lg:text-base">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...
+                </p>
+                <a
+                  href="#!"
+                  class="text-prm_color italic text-sm text-right inline-block w-full mt-3 lg:mb-4"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <img
+                  src="./assets/image/gray_news.png"
+                  class="w-full object-obtain"
+                  alt="news"
+                />
+              </div>
+              <div>
+                <h3
+                  class="text-prm_color font-bold text-xl my-2 lg:text-md lg:my-3"
+                >
+                  Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã
+                  vượt qua nó như nào
+                </h3>
+                <p class="text-justify text-lg lg:text-base">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...
+                </p>
+                <a
+                  href="#!"
+                  class="text-prm_color italic text-sm text-right inline-block w-full mt-3 lg:mb-4"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+          </div>
+          <form
+            action="#"
+            id="myForm"
+            class="bg-[#E87500] px-5 py-3 mt-3 rounded-md lg:hidden"
+          >
+            <h3 class="text-2xl text-center text-white font-bold mb-8">
+              ĐĂNG KÝ TƯ VẤN KHÓA HỌC
+            </h3>
+
+            <div class="flex flex-col mb-2">
+              <label for="name" class="text-white">Họ và tên</label>
+              <input
+                type="text"
+                id="name"
+                class="py-1 pl-3 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col mb-2">
+              <label for="email" class="text-white">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="py-1 pl-3 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col mb-2">
+              <label for="phone" class="text-white">Số điện thoại</label>
+              <input
+                type="tel"
+                id="phone"
+                class="py-1 pl-3 focus:outline-none"
+              />
+            </div>
+            <div class="flex flex-col mb-5">
+              <label for="course" class="text-white"
+                >Khóa học mà bạn muốn tư vấn</label
+              >
+              <input
+                type="text"
+                id="course"
+                class="py-1 pl-3 focus:outline-none"
+              />
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="bg-[#282828] text-white text-center py-2 px-8 rounded-md"
+              >
+                Đăng ký tư vấn
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="hidden lg:block lg:h-fit w-2/3 sticky top-3 mb-5">
+        <div>
+          <img src="./assets/image/banner_doc.png" alt="banner" />
+        </div>
+        <div class="my-5">
+          <h2 class="text-prm_color font-bold text-2xl lg:text-3xl xl:text-4xl">
+            Các khóa học
+          </h2>
+          <div class="c_underline mb-3"></div>
+          <p>Phân tích dữ liệu</p>
+          <p class="font-thin overflow-hidden h-6">
+            ----------------------------------------------------------------
+          </p>
+          <p>Kĩ sư dữ liệu</p>
+          <p class="font-thin overflow-hidden h-6">
+            ------------------------------------------------------------------
+          </p>
+          <p>Khoa học dữ liệu</p>
+          <p class="font-thin overflow-hidden h-6">
+            -------------------------------------------------------------------
+          </p>
+          <p>Lập trình ứng dụng</p>
+          <p class="font-thin overflow-hidden h-6">
+            --------------------------------------------------------------------
+          </p>
+        </div>
+
+        <form
+          action="#"
+          id="myForm"
+          class="bg-[#E87500] px-5 py-3 mt-3 rounded-md lg:block hidden"
+        >
+          <h3 class="text-2xl text-center text-white font-bold mb-8">
+            ĐĂNG KÝ TƯ VẤN KHÓA HỌC
+          </h3>
+
+          <div class="flex flex-col mb-2">
+            <label for="name" class="text-white">Họ và tên</label>
+            <input type="text" id="name" class="py-1 pl-3 focus:outline-none" />
+          </div>
+          <div class="flex flex-col mb-2">
+            <label for="email" class="text-white">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="py-1 pl-3 focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col mb-2">
+            <label for="phone" class="text-white">Số điện thoại</label>
+            <input type="tel" id="phone" class="py-1 pl-3 focus:outline-none" />
+          </div>
+          <div class="flex flex-col mb-5">
+            <label for="course" class="text-white"
+              >Khóa học mà bạn muốn tư vấn</label
+            >
+            <input
+              type="text"
+              id="course"
+              class="py-1 pl-3 focus:outline-none"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-[#282828] text-white text-center py-2 px-8 rounded-md"
+            >
+              Đăng ký tư vấn
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-[#3E3E3E]">
+      <div
+        class="px-2 pt-10 max-w-[1400px] mx-auto grid grid-cols-2 grid-rows-3 gap-5 text-[#F5F5F5] xl:grid-cols-4 xl:grid-rows-1 w-full"
+      >
+        <div class="xl:col-start-2">
+          <h5 class="font-bold text-xl md:text-4xl lg:text-5xl xl:text-4xl">
+            HÀ NỘI
+          </h5>
+          <div class="cus_linefoot mt-1 mb-3"></div>
+          <div class="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-base">
+            <div class="mb-3">
+              <p class="font-bold">165 Thái Hà</p>
+              <p class="font-bold">
+                Hotline: <span class="font-normal"> 024 7106 8368 </span>
+              </p>
+              <p class="font-bold">
+                Địa chỉ:
+                <span class="font-normal"
+                  >Tầng 6, Số 5, Ngách 23, Ngõ 165 Thái Hà, Phường Láng Hạ, Quận
+                  Đống Đa, Thành phố Hà Nội, Việt Nam</span
+                >
+              </p>
+            </div>
+            <div>
+              <p class="font-bold">30 Trung Liệt</p>
+              <p class="font-bold">
+                Hotline: <span class="font-normal"> 024 7106 8368 </span>
+              </p>
+              <p class="font-bold">
+                Địa chỉ:
+                <span class="font-normal"
+                  >Số 30, Trung Liệt, Phường Trung Liệt, Quận Đống Đa, Thành phố
+                  Hà Nội, Việt Nam</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-span-2 h-auto xl:row-span-1">
+          <h5 class="font-bold text-xl md:text-4xl lg:text-5xl xl:text-4xl">
+            HỒ CHÍ MINH
+          </h5>
+          <div class="cus_linefoot mt-1 mb-3"></div>
+          <div class="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-base">
+            <div class="mb-3">
+              <p class="font-bold">HCM - 13 Cao Thắng</p>
+              <p class="font-bold">
+                Hotline: <span class="font-normal"> 024 7106 8368 </span>
+              </p>
+              <p class="font-bold">
+                Địa chỉ:
+                <span class="font-normal"
+                  >13 Cao Thắng, Phường 2, Quận 3, Tp. HCM</span
+                >
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="font-bold">HCM - 224 Điện Biên Phủ</p>
+              <p class="font-bold">
+                Hotline: <span class="font-normal"> 024 7106 8368 </span>
+              </p>
+              <p class="font-bold">
+                Địa chỉ:
+                <span class="font-normal"
+                  >Tầng 4 & Tầng 6, 224 Điện Biên Phủ, Phường Võ Thị Sáu, Quận
+                  3, Thành phố Hồ Chí Minh, Việt Nam</span
+                >
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="font-bold">HCM - 677/6 Điện Biên Phủ</p>
+              <p class="font-bold">
+                Hotline: <span class="font-normal"> 024 7106 8368 </span>
+              </p>
+              <p class="font-bold">
+                Địa chỉ:
+                <span class="font-normal"
+                  >Tầng 4, Yoko Building 677/6, Điện Biên Phủ, Phường 25, Quận
+                  Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-span-2">
+          <h5 class="font-bold text-xl md:text-4xl lg:text-5xl xl:text-4xl">
+            HOTLINE
+          </h5>
+          <div class="cus_linefoot mt-1 mb-3"></div>
+          <div class="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-base">
+            <p class="flex flex-wrap gap-1">
+              Khiếu nại CEO: <span>0982 521 378</span>
+            </p>
+            <p class="flex flex-wrap gap-1">
+              Khiếu nại DCEO: <span>0916 442 368</span>
+            </p>
+            <p class="flex flex-wrap gap-1">
+              Hợp tác truyền thông:<span>0934 146 016</span>
+            </p>
+            <p class="flex flex-wrap gap-1">
+              Hợp tác kinh doanh: <span>0961 123 988</span>
+            </p>
+            <p class="flex flex-wrap gap-1">
+              Khiếu nại dịch vụ CSKH: <span>024 7106 8368</span>
+            </p>
+            <p>Tư vấn khóa học 1</p>
+            <span>Ms. Khánh Ly: 0352 433 233</span>
+            <p>Tư vấn khóa học 2</p>
+            <span>Ms. Ngọc Linh: 0344 463 698</span>
+            <p>CSKH: cskh@mcivietnam.com</p>
+          </div>
+        </div>
+
+        <div
+          class="col-start-2 row-start-3 -translate-y-2/3 xl:col-start-1 xl:row-start-1 xl:translate-y-0"
+        >
+          <h5 class="font-bold text-xl md:text-4xl lg:text-2xl xl:hidden">
+            FANPAGE MCI
+          </h5>
+          <div class="cus_linefoot mt-1 mb-3 lg:text-2xl xl:hidden"></div>
+          <img src="./assets/image/img_foot.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  ></script>
+
+  <script>
+    const menuToggle = document.querySelector(".menu_content");
+    const menuItem = document.querySelector(".menu_content").parentElement;
+    const menuContent = document.querySelector(".menu-content");
+    document.querySelector(".open_menu").addEventListener("click", function () {
+      menuContent.classList.toggle("show");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      menuItem.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menuToggle.classList.toggle("open");
+      });
+    });
+    document.addEventListener("click", () => {
+      menuToggle.classList.remove("open");
+    });
+
+    $(document).ready(function () {
+      function initSlick() {
+        if ($(window).width() <= 1024) {
+          if (!$(".article-list").hasClass("slick-initialized")) {
+            $(".article-list").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:
+                '<button type="button" class="slick-prev"><i class="ri-arrow-left-s-line"></i></button>',
+              nextArrow:
+                '<button type="button" class="slick-next"><i class="ri-arrow-right-s-line"></i></button>',
+            });
+          }
+        } else {
+          if ($(".article-list").hasClass("slick-initialized")) {
+            $(".article-list").slick("unslick");
+          }
+          $(".article-list").show();
+        }
+      }
+
+      initSlick();
+      $(window).resize(function () {
+        initSlick();
+      });
+    });
+  </script>
+</html>

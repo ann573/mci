@@ -1,0 +1,86 @@
+@import 'tailwind.css';
+
+.menu-content {
+    clip-path: inset(0 0 100% 0); /* Ẩn menu ban đầu */
+    transition: clip-path 0.5s ease-in-out; /* Thêm hiệu ứng mượt mà */
+    overflow: hidden;
+  }
+  
+  .menu-content.show {
+    clip-path: inset(0 0 0 0); /* Mở menu */
+  }
+
+  .slick-prev, .slick-next {
+    color: #686868 !important;
+    font-size: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  .slick-prev::before, .slick-next::before{
+    content: '';
+    display: none;
+  } 
+  .slick-prev {
+    position: absolute !important;
+    left: 0 !important;
+    top: 15% !important;
+  }
+  
+  .slick-next {
+    position: absolute !important;
+    top: 15% !important;
+    right: 20px !important;
+  }
+  
+  .c_underline
+  {
+    background-color: #F1692F;
+    width: 60%;
+    max-width: 242px;
+    height: 5px;
+    border-radius: 7px;
+    text-align: center;
+    margin-block: 1rem;
+  }
+  .cus_linefoot
+  {
+    height: 5px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+@media (min-width: 1024px){
+    .menu-content {
+        clip-path: inset(0 0 0 0) !important;
+    }
+}
+
+@media (min-width: 996px) {
+    .article-list {
+        display: block; 
+    }
+    
+    .article-list.slick-initialized {
+        display: none; 
+    }
+    
+}
+@media (min-width: 320px){
+    .article-list {
+        display: none; /* Ẩn danh sách trên màn hình nhỏ */
+    }
+    
+    .article-list.slick-initialized {
+        display: block; /* Hiển thị Slick nếu đã được khởi tạo */
+    }
+
+    .menu-content {
+        clip-path: inset(0 0 100% 0); /* Ẩn menu ban đầu */
+        transition: clip-path 0.5s ease-in-out; /* Thêm hiệu ứng mượt mà */
+        overflow: hidden;
+      }
+      
+      .menu-content.show {
+        clip-path: inset(0 0 0 0); /* Mở menu */
+      }
+}
