@@ -40,6 +40,7 @@
     "foreground-child": "^3.3.0",
     "fraction.js": "^4.3.7",
     "function-bind": "^1.1.2",
+    "gh-pages": "^6.2.0",
     "glob": "^10.4.5",
     "glob-parent": "^6.0.2",
     "hasown": "^2.0.2",
@@ -110,8 +111,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
-  },
+    "dev": "vite",
+    "build":"vite build"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
