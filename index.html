@@ -24,13 +24,16 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-[#e87500] w-full">
+    <header class="bg-[#e87500] w-full lg:h-[93px]">
       <div class="grid grid-cols-12 relative">
-        <a href="#" class="col-span-2 lg:col-span-1 flex justify-center">
+        <a
+          href="./index.html"
+          class="col-span-2 lg:col-span-1 flex justify-center"
+        >
           <img
             src="./assets/image/logo.png"
             alt="logo_mci"
-            class="col-span-2"
+            class="col-span-2" 
           />
         </a>
         <button
@@ -39,43 +42,66 @@
           <i class="ri-menu-line text-xl sm:text-3xl"></i>
         </button>
         <div
-          class="menu-content absolute top-full bg-[#ece8e8] w-full shadow-md lg:shadow-none lg:bg-transparent lg:static lg:col-span-9"
+          class="menu-content absolute z-40 top-full bg-[#ece8e8] w-full shadow-md lg:shadow-none lg:bg-transparent lg:static lg:col-span-9 lg:flex"
         >
-          <ul
-            class="flex flex-col lg:flex-row lg:items-center lg:h-full lg:text-white"
-          >
+          <ul class="flex flex-col lg:flex-row lg:items-center lg:text-white">
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center relative lg:hover:bg-transparent lg:hover:opacity-70"
             >
-              <a href="#!" class="text-xs lg:text-base"
-                >Khóa học <i class="ri-arrow-down-s-fill"></i
-              ></a>
+              <p class="text-xs lg:text-base">
+                Khóa học <i class="ri-arrow-down-s-fill"></i>
+              </p>
+
+              <ul
+                class="menu_content hidden absolute top-full left-0 bg-white lg:bg-prm_color shadow-lg w-[200px]"
+              >
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Phân tích dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Kĩ sư dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Khoa học dữ liệu</a>
+                </li>
+                <li
+                  class="hover:bg-[#f5f5f5] lg:hover:bg-transparent lg:hover:opacity-70 p-2"
+                >
+                  <a href="#!" class="text-sm">Lập trình ứng dụng</a>
+                </li>
+              </ul>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
             >
-              <a href="#!" class="text-xs lg:text-base"
-                >Lịch đào tạo <i class="ri-arrow-down-s-fill"></i
-              ></a>
+              <p class="text-xs lg:text-base">
+                Lịch đào tạo <i class="ri-arrow-down-s-fill"></i>
+              </p>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
             >
-              <a href="#!" class="text-xs lg:text-base"
-                >Doanh nghiệp <i class="ri-arrow-down-s-fill"></i
-              ></a>
+              <p class="text-xs lg:text-base">
+                Doanh nghiệp <i class="ri-arrow-down-s-fill"></i>
+              </p>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
             >
               <a href="#!" class="text-xs lg:text-base">Blog</a>
             </li>
             <li
-              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center"
+              class="pl-3 py-1 hover:bg-white hover:shadow-sm cursor-pointer flex items-center hover:bg-transparent hover:opacity-70"
             >
-              <a href="#!" class="text-xs lg:text-base"
-                >Về chúng tôi <i class="ri-arrow-down-s-fill"></i
-              ></a>
+              <p class="text-xs lg:text-base">
+                Về chúng tôi <i class="ri-arrow-down-s-fill"></i>
+              </p>
             </li>
           </ul>
         </div>
